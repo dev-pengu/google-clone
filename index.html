@@ -10,92 +10,7 @@ https://fonts.google.com/icons
 		<meta name="author" content="Matt Lippelman">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Material+Icons">
-		<style>
-			.material-icons.md-dark { color: rgba(0, 0, 0, 0.54); }
-			.material-icons.md-dark.md-inactive { color: rgba(0, 0, 0, 0.26); }
-			
-			* {
-				font-family: arial, sans-serif;
-			}
-			
-			.app-dot {
-				background-color: rgba(0, 0, 0, 0.26);
-				padding: 1px;
-				width: 2px;
-				height: 2px;
-			}
-			
-			a {
-				text-decoration: none;
-				color: black;
-			}
-			
-			a:hover {
-				text-decoration: underline;
-			}
-			
-			header a {
-				font-size: 14px;
-			}
-			
-			#sign-in-button {
-				color: #fff;
-				background-color: #3c78dc;
-				-webkit-linear-gradient(top, #3c7ae4, #3f76d3);
-				border: 1px solid #4285f4;
-				font-weight: bold;
-				cursor: default;
-				line-height: 28px;
-				border-radius: 2px;
-				outline: none;
-				display: inline-block;
-				padding: 0 12px;
-			}
-			
-			#sign-in-button:hover {
-				box-shadow: inset 0 2px 0 rgb(0 0 0 / 15%);
-			}
-			
-			input[type="submit"] {
-				line-height: 28px;
-				border-radius: 2px;
-				outline: none;
-				display: inline-block;
-				padding: 0 16px;
-				cursor: pointer;
-				border: 1px solid #f2f2f2;
-				background-color: #f2f2f2;
-			}
-			
-			input[type="submit"]:hover {
-				border: 1px solid #d6d6d6;
-			}
-			
-			footer {
-				position: fixed;
-				bottom: 0;
-				left: 0;
-				background-color: #f2f2f2;
-				color: rgba(0, 0, 0, 0.54);
-				border: 1px solid #d6d6d6;
-				padding-bottom: 20px;
-				padding-top: 10px;
-				width: 100vw;
-			}
-			
-			footer a {
-				color: rgba(0, 0, 0, 0.67);
-				font-size: 13px;
-				font-weight: 500;
-			}
-			
-			header {
-				position: fixed;
-				top: 0;
-				left: 0;
-			}
-			
-		</style>
+		<link rel="stylesheet" href="styles/layout.css">
 	</head>
 	<body>
 		<header>
@@ -123,15 +38,17 @@ https://fonts.google.com/icons
 			<button id="sign-in-button">Sign in</button>
 		</header>
 		<main>
-			<img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google logo.">
-			<div id="search-bar">
-				<span class="material-icons md-dark">&#xe8b6
-				</span>
-				<input type="text" id="search-box" name="search-box">
-				<div id="voice-search"></div>
-			</div>
-			<input type="submit" id="google-search" value="Google Search">
-			<input type="submit"  id="feeling-lucky" value="I'm Feeling Lucky">
+			<img id="logo" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google logo.">
+			<form>
+				<div id="search-bar">
+					<span id="search-icon" class="material-icons md-dark">&#xe8b6
+					</span>
+					<input type="text" id="search-box" name="search-box">
+					<div id="voice-search"></div>
+				</div>
+				<input type="submit" id="google-search" value="Google Search">
+				<input type="submit"  id="feeling-lucky" value="I'm Feeling Lucky">
+			</form>
 		</main>
 		<footer>
 			<a id="advertising-link" href="">Advertising</a>
